@@ -139,7 +139,7 @@ https://localhost:<porta>/openapi/v1.json
 
 ## Observações
 
-Este projeto foi desenvolvimento e foi estruturado com foco em aprendizado prático de arquitetura .NET, boas práticas de camada, e integração com banco de dados relational.
+Este projeto foi desenvolvido e foi estruturado com foco em aprendizado prático de arquitetura .NET, boas práticas de camada, e integração com banco de dados relational.
 
 ---
 
