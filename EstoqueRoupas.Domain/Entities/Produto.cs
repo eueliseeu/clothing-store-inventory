@@ -9,5 +9,6 @@ public class Produto
     public string NomeCompleto => $"{Nome} + {Descricao}";
     public decimal Preco { get; set; }
     public int QuantidadeEstoque { get; set; }
+    public bool EstaDisponivel => QuantidadeEstoque > 0;
     public DateTime DataCadastro { get; set; } = DateTime.UtcNow;
 }

@@ -58,6 +58,10 @@ namespace EstoqueRoupas.Infrastructure.Data.Migrations
                         .HasComputedColumnSql("([Nome] + N' + ' + [Descricao])", false)
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("EstaDisponivel")
+                        .HasComputedColumnSql("([QuantidadeEstoque]>(0))", false)
+                        .HasColumnType("bit");
+
                     b.HasKey("Id");
 
                     b.HasIndex("Sku")
