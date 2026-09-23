@@ -54,6 +54,10 @@ namespace EstoqueRoupas.Infrastructure.Data.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<string>("NomeCompleto")
+                        .HasComputedColumnSql("([Nome] + N' + ' + [Descricao])", false)
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("Sku")
